@@ -1,0 +1,12 @@
+package cicd.fsd.p5.mapper;
+
+import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
+
+@Mapper
+public interface UserMapper extends EntityDtoMapper<cicd.fsd.p5.dto.User, cicd.fsd.p5.entity.User> {
+
+	@Mapping(target = "confirmPassword", ignore = true)
+	cicd.fsd.p5.dto.User toDto(cicd.fsd.p5.entity.User entity);
+
+}
