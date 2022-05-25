@@ -1,0 +1,8 @@
+package org.yokekheicicd
+import org.mapstruct.Mapper;
+
+@Mapper
+public interface CourseMapper
+		extends EntityDtoMapper<cicd.fsd.p5.dto.Course, cicd.fsd.p5.entity.Course> {
+
+}
